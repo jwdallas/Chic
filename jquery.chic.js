@@ -1,6 +1,6 @@
 /*
 
-Chic v.01
+Chic v1.0
 JQuery plugin for Styled Selects
 
 */
