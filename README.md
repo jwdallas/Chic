@@ -1,6 +1,6 @@
 <h1>Chic v1.0</h1>
 
-A basic JQuery plugin that dresses up select elements with class "chic" by dynamically wrapping them in an easily styleable &lt;div&gt; &lt;span&gt;.
+A basic JQuery plugin that dresses up select elements with class "chic" by dynamically wrapping them in an easily styleable &lt;div&gt; &lt;span&gt;. This technique allows for a consistent look and feel across browsers.
 
 <h2>How Does it Work?</h2>
 <ul><li>It takes the HTML select element and makes it invisible (not hidden, just zero opacity).</li>
