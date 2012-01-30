@@ -1,5 +1,4 @@
 <h1>Chic v1.0</h1>
-
 A very small (4kb) JQuery plugin that dresses up select elements by dynamically wrapping them in an easily styleable &lt;div&gt; &lt;span&gt; combination allowing for a consistent look and feel across browsers.
 
 <h2>How Does it Work?</h2>
