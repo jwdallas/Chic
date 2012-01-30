@@ -6,7 +6,7 @@
 
 /* Functionality */
 
-select.chic { -webkit-appearance:menulist-button; -moz-appearance:menulist-button;
+.chic-selector select { -webkit-appearance:menulist-button; -moz-appearance:menulist-button;
 	height:32px; min-width:120px; cursor:pointer; vertical-align:middle; outline:0 none; font-size:16px;
 	background:none repeat scroll 0 0 transparent; overflow:hidden; opacity:0; filter: alpha(opacity:0);
   border:none; background:none }

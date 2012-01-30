@@ -10,7 +10,7 @@ JQuery plugin for Styled Selects
     $.fn.chic = function() {
         return this.each(function() {
             if (this.tagName == 'SELECT') {
-                var title = $(this).attr('title');
+                var text = $(this).attr('title') || $(this).attr('name');
                 $(this)
                 .css({
                     'z-index': 10,
@@ -18,7 +18,7 @@ JQuery plugin for Styled Selects
                     '-khtml-appearance': 'none',
                 })
                 .wrap('<div class="chic-selector">')
-                .before('<span>' + title + '</span>')
+                .before('<span>' + text + '</span>')
                 .change(function() {
                     val = $('option:selected', this).text();
                     $(this).prev().text(val).css({ 'color':'#222' });
