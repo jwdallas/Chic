@@ -21,7 +21,7 @@ JQuery plugin for Styled Selects
                 .before('<span>' + text + '</span>')
                 .change(function() {
                     val = $('option:selected', this).text();
-                    $(this).prev().text(val).css({ 'color':'#222' });
+                    $(this).prev().text(val).css({ 'color':'#444' });
                 });
             };
         });
