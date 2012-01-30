@@ -4,9 +4,8 @@ A basic JQuery plugin that dresses up select elements with class "chic" by dynam
 
 <h2>How Does it Work?</h2>
 <ul><li>It takes the HTML select element and makes it invisible (not hidden, just zero opacity).</li>
-<li>Then it places a span tag with the text of the title attribute for the select below it.</li>
-<li>Then it wraps the whole thing in an easily styleable div with class "chic-selector".</li></ul>
-Note: Selects must have a title attribute and the .chic class for the plugin to act on them.
+<li>Uses title attribute as initial value of a dynamically inserted span. (Will fall back to name attribute)</li>
+<li>Wraps the &lt;span&gt;&lt;select&gt; in an easily styleable div with class "chic-selector".</li></ul>
 
 <h2>Compatible With</h2>
 <ul><li>All Modern Browsers</li>
