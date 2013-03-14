@@ -1,4 +1,4 @@
-<h1>Chic v1.1</h1>
+<h1>Chic</h1>
 A small 1.2kb jQuery plugin that dresses up select and checkbox elements by dynamically wrapping them in an easily styleable &lt;div&gt;'s and &lt;span&gt;'s allowing for a consistent look and feel across browsers.
 
 <h2>How Does it Work?</h2>
