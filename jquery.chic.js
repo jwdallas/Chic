@@ -1,4 +1,4 @@
-/*!
+/*
    Chic Inputs
    jQuery plugin for Styled Selects & Checkboxes
    https://github.com/jwdallas/Chic
