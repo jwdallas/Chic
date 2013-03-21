@@ -1,8 +1,11 @@
 /*!
    Chic Inputs
    JQuery plugin for Styled Selects & Checkboxes
+   https://github.com/jwdallas/Chic
    
-   Jonathan Dallas
+   Created by Jonathan Dallas
+   MIT License
+   
 */
 
 
