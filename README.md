@@ -5,7 +5,7 @@ A small 1.2kb jQuery plugin that dresses up select and checkbox elements by dyna
 <ul><li>Looks for selects and checkboxes with a <i>chic</i> class and then makes them invisible (not removed, just zero opacity). This way the actual elements still receive the click events.
 <li>Grabs the title attribute on selects as the initial text for a dynamically inserted span.
 <li>Inputs are dynamically wrapped in an easily styleable div with class "chic-selector" or "chic-checkbox" respective to input type.
-=<li><strong>Caveat for checkboxes:</strong> you are unfortunately limited to the default checkbox width/height using this plugin. Will eventually update to use <a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons/">this technique</a>.</ul>
+=<li><strong>Caveat for checkboxes:</strong> you are unfortunately limited to the default checkbox width/height using this plugin. Will eventually update this to use <a href="http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-easy-css3-checkboxes-and-radio-buttons/">this technique</a>.</ul>
 
 <h3>Compatible With</h3>
 <ul><li>All Modern Browsers</li>
