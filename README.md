@@ -13,3 +13,7 @@ A small 1.2kb jQuery plugin that dresses up select and checkbox elements by dyna
 		<li>Firefox 3.6</li></ul>		
 
 Created by <a href="http://jwdallas.com" target="_blank">Jonathan Dallas</a> with help from <a href="http://darkgoyle.com/">Francisco Brito</a>.
+
+<h1>License</h1>
+
+<a href="http://opensource.org/licenses/MIT">MIT License</a>
