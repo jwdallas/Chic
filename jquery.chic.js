@@ -1,6 +1,6 @@
 /*!
    Chic Inputs
-   JQuery plugin for Styled Selects & Checkboxes
+   jQuery plugin for Styled Selects & Checkboxes
    https://github.com/jwdallas/Chic
    
    Created by Jonathan Dallas
