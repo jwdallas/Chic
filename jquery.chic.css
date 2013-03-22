@@ -14,7 +14,7 @@
 .chic-selector span { position:absolute; line-height:32px; padding-left:10px }
 
 /* checkbox */
-input[type=checkbox] { margin:0; padding:0; position:absolute }
+input[type=checkbox].chic { margin:0; padding:0; position:absolute }
 	
 
 /* Presentation */
