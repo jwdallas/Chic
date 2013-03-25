@@ -14,7 +14,7 @@
         $el
          .css({ 'z-index': 10, opacity: 0, '-khtml-appearance': 'none' })
          .wrap('<div class=chic-selector>')
-         .before($('<span>').text($(this).find(':selected').text()))
+         .before($('<span>').text($el.find(':selected').text()))
          .change(function() {
            val = $('option:selected', this).text();
            $el.prev().text(val);
