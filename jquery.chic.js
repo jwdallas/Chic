@@ -20,7 +20,7 @@
            $el.prev().text(val);
          });
       };
-      if ($el.is('input[type=checkbox]')) {
+      if ($el.is('input[type=checkbox]') && $el.parents('.chic-checkbox').length == 0 ) {
         $el
          .css({ 'z-index': 10, opacity: 0, '-khtml-appearance': 'none' })
          .wrap('<div class=chic-checkbox>')
