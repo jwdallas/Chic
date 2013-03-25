@@ -19,7 +19,7 @@
          .before($('<span>').text($(this).attr('title')))
          .change(function() {
            val = $('option:selected', this).text();
-           $(this).prev().text(val).css({ color:'#222' });
+           $(this).prev().text(val);
          });
       };
       if ($(this).is('input[type=checkbox]')) {
