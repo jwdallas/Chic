@@ -9,29 +9,30 @@
 ;(function($) {
    $.fn.chic = function() {
     return this.each(function() {
-      if (this.tagName == 'SELECT') {
-        $(this)
+      var $el = $(this);
+      if (this.tagName == 'SELECT' && $el.parents('.chic-selector').length == 0 ) {
+        $el
          .css({ 'z-index': 10, opacity: 0, '-khtml-appearance': 'none' })
          .wrap('<div class=chic-selector>')
-         .before($('<span>').text($(this).attr('title')))
+         .before($('<span>').text($(this).find(':selected').text()))
          .change(function() {
            val = $('option:selected', this).text();
-           $(this).prev().text(val);
+           $el.prev().text(val);
          });
       };
-      if ($(this).is('input[type=checkbox]')) {
-        $(this)
+      if ($el.is('input[type=checkbox]')) {
+        $el
          .css({ 'z-index': 10, opacity: 0, '-khtml-appearance': 'none' })
          .wrap('<div class=chic-checkbox>')
          .removeClass('chic')
          .change(function() {
-           if ($(this).is(':checked')) { $(this).parent().addClass('checked');    
-              $(this).parents('label').addClass('checked') }
-           else { $(this).parent().removeClass('checked');
-              $(this).parents('label').removeClass('checked') }
+           if ($el.is(':checked')) { $el.parent().addClass('checked');    
+              $el.parents('label').addClass('checked') }
+           else { $el.parent().removeClass('checked');
+              $el.parents('label').removeClass('checked') }
          });
-        if ($(this).is(':checked')) { $(this).parent().addClass('checked');
-           $(this).parents('label').addClass('checked') }
+        if ($el.is(':checked')) { $el.parent().addClass('checked');
+           $el.parents('label').addClass('checked') }
       };
     });
   };
