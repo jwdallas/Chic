@@ -4,38 +4,38 @@
    https://github.com/jwdallas/Chic
    
    Created by Jonathan Dallas
+   Anthony Ettinger (a few modifications)
    MIT License
-   
 */
-
 
 ;(function($) {
    $.fn.chic = function() {
     return this.each(function() {
-      if (this.tagName == 'SELECT') {
-        $(this)
+      var $el = $(this);
+
+      if ( this.tagName == 'SELECT' && !$el.parents('.chic-selector').length ) {
+        $el
          .css({ 'z-index': 10, opacity: 0, '-khtml-appearance': 'none' })
          .wrap('<div class=chic-selector>')
-         .before($('<span>').text($(this).attr('title')))
+         .before($('<span>').text($el.find(':selected').text()))
          .change(function() {
-           val = $('option:selected', this).text();
-           $(this).prev().text(val);
+           var val = $('option:selected', this).text();
+           $el.prev().text(val);
          });
-      };
-      if ($(this).is('input[type=checkbox]')) {
-        $(this)
+      }
+
+      if ( $el.is('input[type=checkbox]') && !$el.parents('.chic-checkbox').length ) {
+        $el
          .css({ 'z-index': 10, opacity: 0, '-khtml-appearance': 'none' })
          .wrap('<div class=chic-checkbox>')
          .removeClass('chic')
          .change(function() {
-           if ($(this).is(':checked')) { $(this).parent().addClass('checked');    
-              $(this).parents('label').addClass('checked') }
-           else { $(this).parent().removeClass('checked');
-              $(this).parents('label').removeClass('checked') }
+           var checked = $el.is(':checked');
+
+           $el.parent()[ checked ? 'addClass' : 'removeClass' ]('checked');
+           $el.parents('label')[ checked ? 'addClass' : 'removeClass' ]('checked');
          });
-        if ($(this).is(':checked')) { $(this).parent().addClass('checked');
-           $(this).parents('label').addClass('checked') }
-      };
+      }
     });
   };
 })(jQuery);
